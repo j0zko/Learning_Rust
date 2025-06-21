@@ -14,8 +14,9 @@
 *  f32 and f64 -single and double precision
 * -------------------
 * Charakter -char using ''
-*
-*
+*   represnts a single charakter - '-'
+* ----------------------------------
+* Booleans represents a value , which could be true or false
 *
 * */
 
@@ -24,4 +25,15 @@ fn main() {
     println!("this is a value {}", value);
     value = 44.55;
     println!("This value was changed {}", value);
+    data1();
+    data_char();
+}
+
+fn data1() {
+    let true_or_false: bool = false;
+    println!("this is a boolean {}", true_or_false);
+}
+fn data_char() {
+    let charakter: char = 'R';
+    println!("this is a charakter {}"charakter);
 }
