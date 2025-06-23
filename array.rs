@@ -25,11 +25,15 @@
 * */
 
 fn main() {
-    let arr: [u32; 4] = [10, 20, 30, 40];
+    let arr: [i32; 4] = [10, 20, 30, 40];
     println!("{:?}", arr);
-    println!("the lenght of array is {}", arr.len());
+    println!("the length of array is {}", arr.len());
     let arr1 = [10, 20, 30, 40];
-    println!("Array without assigned dataT and lenght ,{:?}", arr1);
+    println!("Array without assigned dataT and length ,{:?}", arr1);
     let arr2: [i32; 4] = [-1; 4];
     println!("This is a default value array: {:?}", arr2);
+
+    for i in 0..4 {
+        println!("the index is : {} & the value is {}", i, arr[i]);
+    }
 }
