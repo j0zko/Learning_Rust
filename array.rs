@@ -30,4 +30,6 @@ fn main() {
     println!("the lenght of array is {}", arr.len());
     let arr1 = [10, 20, 30, 40];
     println!("Array without assigned dataT and lenght ,{:?}", arr1);
+    let arr2: [i32; 4] = [-1; 4];
+    println!("This is a default value array: {:?}", arr2);
 }
