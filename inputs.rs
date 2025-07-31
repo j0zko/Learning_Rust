@@ -13,7 +13,15 @@ use std::io;
 
 fn main() {
     let mut input = String::new();
-    println!("Enter your name:");
+    let mut age_str= String::new();
+    
+    println!("Enter your name:")
+    io::stdin().read_line(&mut input).expect("failed");
+
+    println!("enter your name:")
+    io::stdin().read_line(&mut age_str).expect("failed");
+
+
 
     io::stdin()
         .read_line(&mut input)

@@ -7,7 +7,13 @@
 
 fn main() {
     let employment = 500;
-    println!("all of this people is empleyed {}", employment);
+    println!("all of this people is employed {}", employment);
+
+    {
+        let employment = 1000;
+        println!(" changed state of employed {}", employment);
+    }
+
     let percentage: f64 = 34.00;
     println!("the percentages of unimplemented! {}", percentage);
 }
